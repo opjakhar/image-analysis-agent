@@ -1,0 +1,8 @@
+# Requirements File for Image Analysis Agent App
+# -----------------------------------------------
+# Run: pip install -r requirements.txt
+
+# App Dependencies
+streamlit
+requests
+google-adk
