@@ -1,4 +1,4 @@
-```md
+
 <!--
 Author: Om Prakash Jakhar
 Date: July 2025
@@ -13,9 +13,9 @@ A step-by-step, beginner-friendly project to build your own intelligent **multim
 Powered by Google’s **Agent Development Kit (ADK)** and **Gemini 2.0 Flash**, this agent supports image + text input, provide response based on provided input.
 
 ---
+## 🎥 Demo Video
+[![Watch the Demo](result_img/demo_img.JPG)](https://www.youtube.com/watch?v=ALSElhKwRys)
 
-## 📸 Demo Snapshot
-<img src="result_img/demo_img.JPG" alt="Demo Screenshot" width="100%">
 ---
 
 ## 🔧 Project Overview
@@ -46,7 +46,6 @@ image-analysis-agent/
 └── README.md                     # You’re here!
 
 ````
-
 ---
 
 ## 🚀 Getting Started
@@ -70,15 +69,18 @@ pip install -r requirements.txt
 cd agents_workspace
 adk api_server
 ```
+>  - This exposes your agent on http://localhost:8000
 
-> Make sure your agent is defined correctly in `agents_workspace/image_agent/agent.py`.
+> - To explore the agent endpoints and their schemas, start the agent API server and navigate to http://localhost:8000/docs. This will provide detailed documentation of the available     endpoints and data structures.
+
+>  - Make sure your agent is defined correctly in `agents_workspace/image_agent/agent.py`.
 
 ### 4. Run the Streamlit app
 
 ```bash
 streamlit run apps/Image_Analysis_app.py
 ```
-
+> - If you want to run at specific port then pass arg ``` --server.port <port_number> ```
 ---
 
 ## ⚙️ Setting Up Google ADK
